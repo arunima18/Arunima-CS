@@ -1,21 +1,21 @@
-/* By Reference */
-
 #include<iostream>
 using namespace std;
-
-//Write a program with a function that takes two int parameters, adds them together
-void sumR(int a,int b, int &total){
-total=a+b;
-}
+//By Reference
+//Define a function that takes in two integer parametres and finds the maximum
+void maximum(int a, int b, int &c){
+	
+	if (a>b){
+	c=a;
+	}
+	else {
+	c=b;
+	}
+                                  }
 int main(){
-int sum,a,b;
-cout<<"Enter two numbers"<<endl;
-cin>>a>>b;
-sumR(a,b,sum);
-cout<<sum<<endl;
-return 0;
+	int a,b,mxm;
+	cout<<"Enter two numbers"<<endl;
+	cin>>a>>b;
+	maximum(a,b,mxm);
+	cout<<mxm<<endl;
+	return 0;
 }
-
-// the function that adds the numbers should be void
-//pass by reference parameter then put the sum in that.
-
